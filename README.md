@@ -3,7 +3,7 @@ A simple java CLI application from scratch made by us using the basic concepts o
 
 
 
-By,
+By
 
 | **NAME** | **ROLL-NUMBER** | 
 | :--- | :---: | 
