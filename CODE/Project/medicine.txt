@@ -1,8 +1,0 @@
------------------------------ 
- Name           Price
------------------------------
-Paracetamol      100
-Penicillin       200
-Ativan           100
-Amoxicillin      300
-Adderall         100
