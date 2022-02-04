@@ -1,0 +1,7 @@
+----------------------------------------------------------
+id 	 Name	     Specialist 	 Timing 	 Qualification 	 
+---------------------------------------------------------
+21	Dr.Ananthu  	ENT     	  5-11AM    	MD       	
+32	Dr.Arun 	    Physician     10-3AM    	MBBS,MD       	
+17	Dr.Gayathri  	Surgeon        8-2AM    	BDM         	
+33	Dr.Pramod    	Dentist        10-4PM       BDS,MDS      	
