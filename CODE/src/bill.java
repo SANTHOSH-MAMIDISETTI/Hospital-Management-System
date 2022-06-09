@@ -1,10 +1,5 @@
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class bill extends cashier{
@@ -19,20 +14,18 @@ public class bill extends cashier{
     	int c = input.nextInt();
     	int TOTAL  = (a*100)+(b*200)+(c*300);
     	System.out.println("TOTAL AMOUNT =" + TOTAL  );
-    	
-    	System.out.println("");
-    	System.out.println("To verify please type again" );
-        System.out.println("total_amount:-");
-        camount = input.nextInt();
-        if (camount==TOTAL) {
-        	System.out.println("Verfied");
+
+        for (String s : Arrays.asList("", "To verify please type again", "total_amount:-")) {
+            System.out.println(s);
         }
+        camount = input.nextInt();
+        if (camount==TOTAL) System.out.println("Verified");
         else 
         	System.out.println("Not same . You have one more chance !! ");
             System.out.println(" Type total_amount:-");
             camount = input.nextInt();
             if (camount==TOTAL) {
-            	System.out.println("Verfied  !! "); 	
+            	System.out.println("Verified  !! ");
             }
             else 
             	System.out.println("Not same !! ");

@@ -4,8 +4,8 @@ import java.util.*;
 class cashier {
     String cid, cname;
     int camount;
-    ArrayList<String> mname = new ArrayList<String>();
-    ArrayList<Integer> mprice = new ArrayList<Integer>();
+    ArrayList<String> mname = new ArrayList<>();
+    ArrayList<Integer> mprice = new ArrayList<>();
     
 
     void cashier() {

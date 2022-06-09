@@ -10,8 +10,7 @@ class appointment extends patient
 
 {
     String date, time, doctorname;
-    String pid;
-   	String pname, disease, sex;
+    String pname, disease, sex;
        int age;
 
     void makeAppointment()

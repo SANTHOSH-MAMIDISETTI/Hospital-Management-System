@@ -6,14 +6,14 @@ import java.io.PrintWriter;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class admin {
-	String adid, adname;
+	String addID, addName;
 	int age;
     void admin_info() {
         try (Scanner input = new Scanner(System.in)) {
             System.out.print("id:-");
-            adid = input.nextLine();
+            addID = input.nextLine();
             System.out.print("name:-");
-            adname = input.nextLine();
+            addName = input.nextLine();
         }
     }
     void UpdatePatient() {
@@ -27,7 +27,7 @@ public class admin {
                 	System.out.print("id:-");
                     String pid = input.nextLine();
                     System.out.print("name:-");
-                    String pname = input.nextLine();
+                    String patientName = input.nextLine();
                     System.out.print("disease:-");
                     String disease = input.nextLine();
                     System.out.print("sex:-");
@@ -35,6 +35,7 @@ public class admin {
                     try{
                     	System.out.print("age:-");
                     	int age = input.nextInt();
+                        age = this.age;
                     }
                     catch (InputMismatchException a){
                         System.out.print("Enter number  of patient to be added");
@@ -47,7 +48,7 @@ public class admin {
                   	  FileWriter fw = new FileWriter(file,true);
                   	  BufferedWriter bw = new BufferedWriter(fw);
                   	  PrintWriter pn = new PrintWriter(bw);
-                  	  pn.println( pid+"\t"+"\t"+ pname+"\t "+"\t"+ disease+"\t \t" + sex +"\t \t"+ age );
+                  	  pn.println( pid+"\t"+"\t"+ patientName+"\t "+"\t"+ disease+"\t \t" + sex +"\t \t"+ age );
                   	  pn.close();
                   }
                   catch(IOException ia){
@@ -58,7 +59,18 @@ public class admin {
             }
         }
     }
-    void Updatedoctor() {
+
+    static void repeatedCodes() throws IOException {
+        File file =new File("patient.txt");
+        if(!file.exists()){
+           file.createNewFile();
+        }
+        FileWriter fw = new FileWriter(file,true);
+        BufferedWriter bw = new BufferedWriter(fw);
+        PrintWriter pn = new PrintWriter(bw);
+    }
+
+    void UpdateDoctor() {
     	try (Scanner input = new Scanner(System.in)) {
             System.out.println("Enter number  of doctor to be added");
              try (Scanner in = new Scanner(System.in)) {
@@ -69,13 +81,13 @@ public class admin {
                 	System.out.print("id:-");
                     String did = input.nextLine();
                     System.out.print("name:-");
-                    String dname = input.nextLine();
-                    System.out.print("specilization:-");
-                    String specilist = input.nextLine();
+                    String doctorName = input.nextLine();
+                    System.out.print("specialization:-");
+                    String specialist = input.nextLine();
                     System.out.print("work time:-");
                     String appoint = input.nextLine();
                     System.out.print("qualification:-");
-                    String doc_qual = input.nextLine();
+                    String doctorQualification = input.nextLine();
                     System.out.println("\n");
                     try{
                         File file =new File("doctor.txt");
@@ -85,7 +97,7 @@ public class admin {
                   	  FileWriter fw = new FileWriter(file,true);
                   	  BufferedWriter bw = new BufferedWriter(fw);
                   	  PrintWriter pn = new PrintWriter(bw);
-                  	  pn.println( did+"\t"+"\t"+ dname+"\t "+"\t"+ specilist+"\t  "+"\t" + appoint+"\t"+"\t"+ doc_qual);
+                  	  pn.println( did+"\t"+"\t"+ doctorName+"\t "+"\t"+ specialist+"\t  "+"\t" + appoint+"\t"+"\t"+ doctorQualification);
                   	  pn.close();
                   }
                   catch(IOException ia){

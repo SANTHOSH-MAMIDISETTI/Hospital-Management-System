@@ -218,7 +218,7 @@ public class HospitalManagement
                             case 2 -> {
 
                                 {
-                                    ad.Updatedoctor();
+                                    ad.UpdateDoctor();
                                 }
 
                                 System.out.println("\nReturn to Back Press 1 and for Main Menu Press 0");
