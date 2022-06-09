@@ -17,32 +17,32 @@ class appointment extends patient
     void makeAppointment()
 
     {
-        Scanner input = new Scanner(System.in);
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.print("Date (DD/MM/YY):-");
+            date = input.nextLine();
 
-        System.out.print("Date (DD/MM/YY):-");
-        date = input.nextLine();
+            System.out.print("Time:-");
+            time = input.nextLine();
+            
+            System.out.print("Enter the patient Name:-");
+            pname = input.nextLine();
+            
+            System.out.print("Enter the patient disease :-");
+            disease = input.nextLine();
 
-        System.out.print("Time:-");
-        time = input.nextLine();
-        
-        System.out.print("Enter the patient Name:-");
-        pname = input.nextLine();
-        
-        System.out.print("Enter the patient disease :-");
-        disease = input.nextLine();
+            System.out.print("Doctor Name:-");
+            doctorname = input.nextLine();
+            try{
+            	System.out.print("Enter the patient age :-");
+                age = input.nextInt();
+            }
+            catch (InputMismatchException a){
 
-        System.out.print("Doctor Name:-");
-        doctorname = input.nextLine();
+                System.out.print("please enter a number");
+            }
+        }
+
         try{
-        	System.out.print("Enter the patient age :-");
-            age = input.nextInt();
-        }
-        catch (InputMismatchException a){
-
-            System.out.print("please enter a number");
-        }
-
-    try{
         File file =new File("appointment.txt");
   	  if(!file.exists()){
   	 	file.createNewFile();
