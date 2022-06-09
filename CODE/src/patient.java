@@ -5,40 +5,29 @@ class patient
     int pid;
 	String pname, disease, sex;
     int age;
-   
 	void new_patient()
-
     {
         Scanner input = new Scanner(System.in);
-
         System.out.print("name:-");
         pname = input.nextLine();
-
         System.out.print("disease:-");
         disease = input.nextLine();
-
         System.out.print("sex:-");
         sex = input.nextLine();
-
         try{
         	System.out.print("age:-");
         	age = input.nextInt();
         }
         catch (InputMismatchException a){
-
             System.out.print("please enter a number");
-
         }
-               
         try{
         	 System.out.print("id:-");
              pid = input.nextInt();
         }
         catch (InputMismatchException a){
-
             System.out.print("please enter a number");
         } 
-        
         try{
             File file =new File("patient.txt");
       	   if(!file.exists()){
@@ -54,13 +43,11 @@ class patient
       	   System.out.println("Exception occurred:");
       	   ia.printStackTrace();
         }
-
     }
     void patient_info()
     {
         File file = new File("patient.txt");
         BufferedInputStream bis = null;
- 	    
         try (BufferedReader br = new BufferedReader(new FileReader(file)))
         {
             String line;
@@ -70,10 +57,7 @@ class patient
         } catch (IOException e) {
             e.printStackTrace();
         }
-	
 }    
-
-    
     void view_medicine() {
    	 File file = new File("medicine.txt");
    	    BufferedInputStream bis = null;
@@ -81,7 +65,6 @@ class patient
    	    try
    	    {
    	        fis = new FileInputStream(file);
-
    	        bis = new BufferedInputStream(fis);
    	        while( bis.available() > 0 ){             	
    	            System.out.print((char)bis.read());

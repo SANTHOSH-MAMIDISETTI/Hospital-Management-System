@@ -59,7 +59,6 @@ public class admin {
             }
         }
     }
-
     static void repeatedCodes() throws IOException {
         File file =new File("patient.txt");
         if(!file.exists()){
@@ -69,7 +68,6 @@ public class admin {
         BufferedWriter bw = new BufferedWriter(fw);
         PrintWriter pn = new PrintWriter(bw);
     }
-
     void UpdateDoctor() {
     	try (Scanner input = new Scanner(System.in)) {
             System.out.println("Enter number  of doctor to be added");

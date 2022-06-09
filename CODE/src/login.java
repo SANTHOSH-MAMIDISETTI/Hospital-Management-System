@@ -1,9 +1,5 @@
-
 import java.util.Scanner;
-
-
 import java.io.*;
-
 interface doctor_login{
 	void doctor_login();
 	}
@@ -17,15 +13,12 @@ interface cashier_login{
         public static login doctor_login;
         private final int Username = 123;
         private final int Password = 123;
-
          int EnteredUsername, EnteredPassword;
-
         public void doctor_login() {
         	Scanner in = new Scanner(System.in);
             for(int k=0;k<=3;k++)
             {
             	if (k<2)
-            		
             {
             		System.out.println("Enter Username");
 		            EnteredUsername = in.nextInt();
@@ -35,12 +28,8 @@ interface cashier_login{
 		            EnteredPassword = in.nextInt();
 		            System.out.println("Password Entered is " + EnteredPassword);
 		            System.out.println("");
-		            
-            
             if (Username == EnteredUsername && (Password == EnteredPassword)) {
-                
                 System.out.println("");
-                
                 break;
             }
             else {
@@ -58,8 +47,6 @@ interface cashier_login{
     }
        public void admin_login() {
         	Scanner in = new Scanner(System.in);
-
-            
             for(int k=0;k<=3;k++)
             {
             	if (k<2)
@@ -71,11 +58,8 @@ interface cashier_login{
                     System.out.println("Enter Password");
                     EnteredPassword = in.nextInt();
                     System.out.println("");
-     
             if (Username == EnteredUsername && (Password == EnteredPassword)) {
-                
                 System.out.println("");
-                
                 break;
             }
             else {
@@ -91,15 +75,11 @@ interface cashier_login{
             }
         }
     }
-
 		public void cashier_login() {
-
               Scanner console = new Scanner(System.in);
-
                 for(int k=0;k<=3;k++)
                 {
                 	if (k<2)
-                		
                 {
                 		System.out.println("Enter Username");
 		                EnteredUsername = console.nextInt();
@@ -108,11 +88,8 @@ interface cashier_login{
 		                System.out.println("Enter Password");
 		                EnteredPassword = console.nextInt();
 		                System.out.println("");
-		                                
                 if (Username == EnteredUsername && (Password == EnteredPassword)) {
-                    
                     System.out.println("");
-                    
                     break;
                 }
                 else {
@@ -124,7 +101,6 @@ interface cashier_login{
                     else
                 {
                         System.out.println("You wasted your 2 chances !!");
-                    
                     System.exit(k);
                     break;  
                 }
