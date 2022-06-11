@@ -5,3 +5,4 @@ id 	 Name	     Specialist       Timing 	 Qualification
 32	Dr.Arun 	Physician     10-3AM       MBBS,MD       	
 17	Dr.Gayathri  	Surgeon       8-2AM    	   BDM         	
 33	Dr.Pramod    	Dentist       10-4PM       BDS,MDS      	
+34	santu	 s	  3	s

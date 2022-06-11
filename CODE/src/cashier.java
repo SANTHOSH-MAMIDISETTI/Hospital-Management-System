@@ -6,25 +6,27 @@ class cashier {
     ArrayList<String> mname = new ArrayList<>();
     ArrayList<Integer> mprice = new ArrayList<>();
     void cashier() {
-        Scanner input = new Scanner(System.in);
-        System.out.print("id:-");
-        cid = input.nextLine();
-        System.out.print("name:-");
-        cname = input.nextLine();
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.print("id:-");
+            cid = input.nextLine();
+            System.out.print("name:-");
+            cname = input.nextLine();
+        }
     }
     void add_medicine() {
-    	Scanner input = new Scanner(System.in);
-        while (true){
-            System.out.print("Enter medicine name: ");
-            String a = input.next();
-            System.out.print("Enter medicine price: ");
-            int b = input.nextInt();
-            mname.add(a);
-            mprice.add(b);
-            System.out.print("Do you want to add more? (y / n): ");
-            String x = input.next();
-            if (x.equals("n")){
-                break;
+    	try (Scanner input = new Scanner(System.in)) {
+            while (true){
+                System.out.print("Enter medicine name: ");
+                String a = input.next();
+                System.out.print("Enter medicine price: ");
+                int b = input.nextInt();
+                mname.add(a);
+                mprice.add(b);
+                System.out.print("Do you want to add more? (y / n): ");
+                String x = input.next();
+                if (x.equals("n")){
+                    break;
+                }
             }
         }
         try{

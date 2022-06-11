@@ -22,7 +22,7 @@ class doctor
             System.out.print("please enter a number");
         }
         try{
-          File file =new File("doctor.txt");
+          File file =new File("E:/from_github/New folder/Hospital-Management-System/CODE/text_files/doctor.txt");
     	  if(!file.exists()){
     	 	file.createNewFile();
     	  }

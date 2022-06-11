@@ -75,7 +75,7 @@ interface cashier_login{
         }
     }
 		public void cashier_login() {
-              Scanner console = new Scanner(System.in);
+              try (Scanner console = new Scanner(System.in)) {
                 for(int k=0;k<=3;k++)
                 {
                 	if (k<2)
@@ -103,6 +103,7 @@ interface cashier_login{
                     System.exit(k);
                     break;  
                 }
+            }
             }
         }
 	}

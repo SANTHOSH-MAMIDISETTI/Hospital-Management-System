@@ -5,3 +5,4 @@ id     Name 	 Disease 	 Gender     Age
 20    Akarsh	      Cold	    Male	  23
 3     Alok	      Malarlia      Male	  45
 50    Alfy	      Diabetes	    Male	  25
+90	alla	 	alla	  	m	 9
