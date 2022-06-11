@@ -41,7 +41,7 @@ public class admin {
                         System.out.print("Enter number  of patient to be added");
                     }
                     try{
-                        File file =new File("patient.txt");
+                        File file =new File("E:/from_github/New folder/Hospital-Management-System/CODE/text_files/patient.txt");
                   	  if(!file.exists()){
                   	 	file.createNewFile();
                   	  }
@@ -60,7 +60,7 @@ public class admin {
         }
     }
     static void repeatedCodes() throws IOException {
-        File file =new File("patient.txt");
+        File file =new File("E:/from_github/New folder/Hospital-Management-System/CODE/text_files/patient.txt");
         if(!file.exists()){
            file.createNewFile();
         }
@@ -88,14 +88,14 @@ public class admin {
                     String doctorQualification = input.nextLine();
                     System.out.println("\n");
                     try{
-                        File file =new File("doctor.txt");
+                        File file =new File("E:/from_github/New folder/Hospital-Management-System/CODE/text_files/doctor.txt");
                   	  if(!file.exists()){
                   	 	file.createNewFile();
                   	  }
                   	  FileWriter fw = new FileWriter(file,true);
                   	  BufferedWriter bw = new BufferedWriter(fw);
                   	  PrintWriter pn = new PrintWriter(bw);
-                  	  pn.println( did+"\t"+"\t"+ doctorName+"\t "+"\t"+ specialist+"\t  "+"\t" + appoint+"\t"+"\t"+ doctorQualification);
+                  	  pn.println( did+"\t"+"\t"+ doctorName+"\t "+"\t"+ specialist+"\t  "+"\t" + appoint+"\t"+"/t"+ doctorQualification);
                   	  pn.close();
                   }
                   catch(IOException ia){

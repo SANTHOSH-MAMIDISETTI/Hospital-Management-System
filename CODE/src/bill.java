@@ -28,7 +28,7 @@ public class bill extends cashier{
             	System.out.println("Not same !! ");
     }
     void view_medicine() {
-    	 File file = new File("medicine.txt");
+    	 File file = new File("E:/from_github/New folder/Hospital-Management-System/CODE/text_files/medicine.txt");
     	 BufferedInputStream bis = null;
          try (BufferedReader br = new BufferedReader(new FileReader(file)))
          {

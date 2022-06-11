@@ -28,7 +28,7 @@ class cashier {
             }
         }
         try{
-            File f2 = new File("medicine.txt");
+            File f2 = new File("E:/from_github/New folder/Hospital-Management-System/CODE/text_files/medicine.txt");
             if(!f2.exists()){
                 f2.createNewFile();
             }

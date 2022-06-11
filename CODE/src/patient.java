@@ -29,7 +29,7 @@ class patient
             System.out.print("please enter a number");
         } 
         try{
-            File file =new File("patient.txt");
+            File file =new File("E:/from_github/New folder/Hospital-Management-System/CODE/text_files/patient.txt");
       	   if(!file.exists()){
       	 	file.createNewFile();
       	  }
@@ -46,7 +46,7 @@ class patient
     }
     void patient_info()
     {
-        File file = new File("patient.txt");
+        File file = new File("E:/from_github/New folder/Hospital-Management-System/CODE/text_files/patient.txt");
         BufferedInputStream bis = null;
         try (BufferedReader br = new BufferedReader(new FileReader(file)))
         {
@@ -59,7 +59,7 @@ class patient
         }
 }    
     void view_medicine() {
-   	 File file = new File("medicine.txt");
+   	 File file = new File("E:/from_github/New folder/Hospital-Management-System/CODE/text_files/medicine.txt");
    	    BufferedInputStream bis = null;
    	    FileInputStream  fis= null;
    	    try

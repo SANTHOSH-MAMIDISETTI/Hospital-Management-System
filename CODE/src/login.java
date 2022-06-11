@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.io.*;
 interface doctor_login{
 	void doctor_login();
 	}

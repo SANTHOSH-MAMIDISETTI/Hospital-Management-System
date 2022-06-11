@@ -38,7 +38,7 @@ class doctor
       }
         }
     void doctor_info() {
-    File file = new File("doctor.txt");
+    File file = new File("E:/from_github/New folder/Hospital-Management-System/CODE/text_files/doctor.txt");
     BufferedInputStream bis = null;
     try (BufferedReader br = new BufferedReader(new FileReader(file)))
     {
@@ -51,7 +51,7 @@ class doctor
     }
 }
     void patient_details() {
-    	 File file = new File("patient.txt");
+    	 File file = new File("E:/from_github/New folder/Hospital-Management-System/CODE/text_files/patient.txt");
     	    BufferedInputStream bis = null;
             try (BufferedReader br = new BufferedReader(new FileReader(file)))
             {
